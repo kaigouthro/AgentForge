@@ -68,6 +68,5 @@ class AgentUtils:
             user_input = input("\nDefine Objective (leave empty to use defaults): ")
             if user_input.lower() == '':
                 return None
-            else:
-                self.config.settings['directives']['Objective'] = user_input
-                return user_input
+            self.config.settings['directives']['Objective'] = user_input
+            return user_input
